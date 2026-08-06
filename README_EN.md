@@ -8,8 +8,6 @@ An enterprise knowledge workflow agent built with FastAPI, LangGraph, PostgreSQL
 
 中文文档：[README.md](README.md)
 
-> **Disclaimer:** This project is provided for learning, research, and technical communication only. Commercial use is prohibited. Third-party names, trademarks, API examples, models, and assets included in the project are for demonstration purposes and may be subject to third-party intellectual property rights or service terms. Users are responsible for verifying authorization and compliance and assume all risks arising from use of this project.
-
 ## Quick start
 
 ### Prerequisites
