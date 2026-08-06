@@ -12,6 +12,7 @@ REQUIRED = [
     "README.md", ".env.example", ".env.prod.example", "Dockerfile",
     "docker-compose.yml", "docker-compose.prod.yml", "app/main.py",
     "deploy/init.sql", "deploy/nginx.conf", "deploy/certs/README.md",
+    "showcase/index.html", "showcase/screenshots/01-login.webp",
 ]
 
 

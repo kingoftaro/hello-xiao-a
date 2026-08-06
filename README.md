@@ -2,6 +2,10 @@
 
 基于 FastAPI、LangGraph、PostgreSQL、Redis 和 Milvus 的企业知识工作流 Agent。
 
+[在线项目介绍](https://kingoftaro.github.io/hello-xiao-a/) · [完整产品文档](docs/产品文档.md) · [部署指南](deploy/DEPLOY.md)
+
+[![项目界面预览](showcase/screenshots/02-zhangsan-welcome.webp)](https://kingoftaro.github.io/hello-xiao-a/)
+
 ## 快速开始
 
 ### 前置要求
@@ -151,6 +155,7 @@ python -m app.main
 app/                      应用源码
 deploy/                   数据库、Nginx、Prometheus 与部署文件
 docs/                     产品和使用文档
+showcase/                 GitHub Pages 项目介绍页
 eval/                     评测数据与验证脚本
 scripts/                  维护脚本
 .github/workflows/        GitHub 自动配置校验
@@ -175,3 +180,5 @@ docker compose --env-file .env.prod -f docker-compose.prod.yml config --quiet
 ```
 
 GitHub Actions 会在每次 push 和 pull request 时自动执行相同的结构与 Compose 校验。
+
+`showcase/` 会在 `main` 分支更新后自动发布到 GitHub Pages。首次使用时，请在仓库 `Settings → Pages → Build and deployment` 中把 Source 设置为 `GitHub Actions`。
