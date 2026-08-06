@@ -2,7 +2,7 @@
 
 基于 FastAPI、LangGraph、PostgreSQL、Redis 和 Milvus 的企业知识工作流 Agent。
 
-[在线项目介绍](https://kingoftaro.github.io/hello-xiao-a/) · [完整产品文档](docs/产品文档.md) · [部署指南](deploy/DEPLOY.md)
+[在线项目介绍](https://kingoftaro.github.io/hello-xiao-a/) · [从 0 到 1 项目搭建](docs/从0到1项目搭建.md) · [完整产品文档](docs/产品文档.md) · [部署指南](deploy/DEPLOY.md)
 
 [![项目界面预览](showcase/screenshots/02-zhangsan-welcome.webp)](https://kingoftaro.github.io/hello-xiao-a/)
 
