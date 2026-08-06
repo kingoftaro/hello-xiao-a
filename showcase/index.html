@@ -761,9 +761,9 @@ h3.sub{font-family:var(--font-body);font-weight:500;font-size:clamp(16px,1.4vw,2
         <div class="pages">取舍 · 模型路由 · 路由反转 · 教训</div>
       </div>
       <div class="toc-bubble reveal reveal-4" data-goto="23" style="--bc:#4F46E5">
-        <div class="no">ACT 07 · 现状与展望</div>
-        <h4>当前状态与边界</h4>
-        <div class="pages">指标 · P3 收尾 · 技术债务 · 展望</div>
+        <div class="no">ACT 07 · 功能进化</div>
+        <h4>面向落地的功能增强</h4>
+        <div class="pages">流式体验 · 依赖编排 · 业务接入 · 多租户</div>
       </div>
       <div class="toc-bubble reveal reveal-5" data-goto="25" style="--bc:#CA8A04">
         <div class="no">ACT 08 · 收尾</div>
@@ -1719,67 +1719,67 @@ h3.sub{font-family:var(--font-body);font-weight:500;font-size:clamp(16px,1.4vw,2
   </div>
 </section>
 
-<!-- ============ 18. 当前状态 ============ -->
-<section class="slide" data-act="7" data-actname="现状与展望" data-title="当前状态">
+<!-- ============ 18. 近期功能优化 ============ -->
+<section class="slide" data-act="7" data-actname="功能进化" data-title="近期功能优化">
   <div class="slide-inner">
-    <div class="eyebrow reveal reveal-1">第七幕 · 现状与展望</div>
-    <h2 class="title reveal reveal-2">当前状态:<em>功能验证充分,生产化在路上</em></h2>
+    <div class="eyebrow reveal reveal-1">第七幕 · 功能进化</div>
+    <h2 class="title reveal reveal-2">下一阶段:<em>从功能闭环到规模化使用</em></h2>
     <div class="metric-grid">
-      <div class="metric reveal reveal-3"><div class="v">17/17</div><div class="l">联调通过</div></div>
-      <div class="metric reveal reveal-3"><div class="v acc">8</div><div class="l">工具数</div></div>
-      <div class="metric reveal reveal-4"><div class="v">10</div><div class="l">种子用户</div></div>
-      <div class="metric reveal reveal-4"><div class="v acc">4</div><div class="l">部门隔离</div></div>
-      <div class="metric reveal reveal-5"><div class="v">11</div><div class="l">Prompt 版本管理</div></div>
-      <div class="metric reveal reveal-5"><div class="v acc">5</div><div class="l">角色 RBAC</div></div>
-      <div class="metric reveal reveal-6"><div class="v">3</div><div class="l">降级链</div></div>
-      <div class="metric reveal reveal-6"><div class="v acc">P2</div><div class="l">迭代完成</div></div>
+      <div class="metric reveal reveal-3"><div class="v">SSE</div><div class="l">流式响应</div></div>
+      <div class="metric reveal reveal-3"><div class="v acc">DAG</div><div class="l">依赖编排</div></div>
+      <div class="metric reveal reveal-4"><div class="v">UAT</div><div class="l">用户验收</div></div>
+      <div class="metric reveal reveal-4"><div class="v acc">CI</div><div class="l">质量门禁</div></div>
+      <div class="metric reveal reveal-5"><div class="v">SLA</div><div class="l">服务基线</div></div>
+      <div class="metric reveal reveal-5"><div class="v acc">A/B</div><div class="l">效果闭环</div></div>
+      <div class="metric reveal reveal-6"><div class="v">K8s</div><div class="l">弹性部署</div></div>
+      <div class="metric reveal reveal-6"><div class="v acc">Tenant</div><div class="l">租户隔离</div></div>
     </div>
     <div class="grid-2 reveal reveal-6" style="margin-top:28px">
       <div class="card" style="border-left:3px solid var(--success);padding:18px 22px">
-        <h4 style="font-size:15px;margin-bottom:8px;color:var(--success)">✅ 已完成</h4>
-        <p style="font-size:12.5px;line-height:1.7">W2-W9 全阶段 · P1(分析/审批/审计/反馈)· P2(Prompt 版本管理 / 取消机制 / 命名空间隔离 / sessions 状态机)· 前端 v3 业务场景化 · SSE 流式 · 多轮上下文注入 · 多人协作闭环</p>
+        <h4 style="font-size:15px;margin-bottom:8px;color:var(--success)">⚡ 体验与效率</h4>
+        <p style="font-size:12.5px;line-height:1.7">全链路 SSE 流式输出 · Planner/聚合节点全面异步化 · 模型与向量服务启动预热 · 慢任务进度可视化 · 失败步骤支持定点重试</p>
       </div>
       <div class="card" style="border-left:3px solid var(--accent);padding:18px 22px">
-        <h4 style="font-size:15px;margin-bottom:8px;color:#92400E">⏳ P3 收尾</h4>
-        <p style="font-size:12.5px;line-height:1.7">压测(vegeta/k6)· UAT + 安全实测 · needs_replan 误报复查 · pymilvus 3.1 迁移(硬 deadline)· Windows uvicorn reload 修复</p>
+        <h4 style="font-size:15px;margin-bottom:8px;color:#92400E">🧭 业务与运营</h4>
+        <p style="font-size:12.5px;line-height:1.7">真实 CRM/邮件/工单连接器 · 知识库运营台 · 成本与质量仪表盘 · Prompt 灰度发布 · 权限矩阵可视化 · 告警通知闭环</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ 19. 技术债务与展望 ============ -->
-<section class="slide" data-act="7" data-title="技术债务与展望">
+<!-- ============ 19. 功能路线图 ============ -->
+<section class="slide" data-act="7" data-title="功能路线图">
   <div class="slide-inner">
-    <div class="eyebrow reveal reveal-1">第七幕 · 现状与展望</div>
-    <h2 class="title reveal reveal-2">技术债务与展望:<em>诚实说明边界</em></h2>
-    <h3 class="sub reveal reveal-2">每个"没做"都能回答:为什么不做、什么时候做、怎么做。</h3>
+    <div class="eyebrow reveal reveal-1">第七幕 · 功能进化</div>
+    <h2 class="title reveal reveal-2">功能路线图:<em>围绕真实使用持续增强</em></h2>
+    <h3 class="sub reveal reveal-2">优先做能提升交付效率、业务覆盖和运营可控性的能力。</h3>
     <div class="grid-2" style="margin-top:32px">
       <div class="card reveal reveal-3">
-        <h4 style="font-size:17px;margin-bottom:14px">已知边界(P3)</h4>
+        <h4 style="font-size:17px;margin-bottom:14px">近期增强(P0 / P1)</h4>
         <div style="font-size:13px;line-height:1.9;color:var(--ink-soft)">
-          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge warn">边界</span>对话压缩未实现(历史 5 轮封顶)</div>
-          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge warn">边界</span><code style="font-family:var(--font-mono);font-size:11.5px">depends_on</code> 未编排(子任务一律并行)</div>
-          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge warn">边界</span>checkpoint 无 TTL(快照随会话增长)</div>
-          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge warn">边界</span><code style="font-family:var(--font-mono);font-size:11.5px">ROLE_NAMESPACES</code> 未接入(manager 跨部门不可见)</div>
-          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge warn">边界</span><code style="font-family:var(--font-mono);font-size:11.5px">user_memories</code> 表已建未接(长期记忆)</div>
-          <div style="padding:6px 0"><span class="badge warn">边界</span>token usage 部分采集(未持久化)</div>
+          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge warn">P0</span>接入真实 CRM / 邮件 / 工单 API 与凭证轮换</div>
+          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge warn">P0</span>消费 <code style="font-family:var(--font-mono);font-size:11.5px">depends_on</code>,按拓扑分批执行子任务</div>
+          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge warn">P0</span>关键场景评测进入 CI,建立质量回归门禁</div>
+          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge warn">P1</span>知识文档上传、审核、发布与版本回滚</div>
+          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge warn">P1</span>请求成本、模型命中率与业务成功率看板</div>
+          <div style="padding:6px 0"><span class="badge warn">P1</span>经理跨部门授权与临时权限审批</div>
         </div>
       </div>
       <div class="card reveal reveal-4">
-        <h4 style="font-size:17px;margin-bottom:14px">远期展望(v3 方案)</h4>
+        <h4 style="font-size:17px;margin-bottom:14px">规模化能力</h4>
         <div style="font-size:13px;line-height:1.9;color:var(--ink-soft)">
-          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge info">规划</span>真实业务系统对接(CRM/邮件/工单契约已对齐)</div>
-          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge info">规划</span>多租户扩展(dept_namespace → tenant_id)</div>
-          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge info">规划</span>K8s 部署清单 + 密钥管理 + TLS 全量</div>
-          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge info">规划</span>对话压缩(滑动窗口 + 分段摘要)</div>
-          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge info">规划</span>子任务依赖编排(拓扑分批 fan-out)</div>
-          <div style="padding:6px 0"><span class="badge info">规划</span>checkpoint TTL + 长期记忆读写</div>
+          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge info">规划</span>多租户隔离:tenant_id + 独立配额 + 独立审计域</div>
+          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge info">规划</span>可插拔工具市场与连接器健康检查</div>
+          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge info">规划</span>K8s 弹性部署、密钥托管与灰度升级</div>
+          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge info">规划</span>按质量、时延、成本动态选择模型</div>
+          <div style="padding:6px 0;border-bottom:1px dashed var(--border)"><span class="badge info">规划</span>审批、失败、超时事件统一通知中心</div>
+          <div style="padding:6px 0"><span class="badge info">规划</span>可复用业务工作流模板与行业方案包</div>
         </div>
       </div>
     </div>
     <div class="value-strip reveal reveal-5">
-      <div class="lbl">边界原则</div>
-      <div class="txt">每个"没做"都能回答三问 —— <b style="background:rgba(255,255,255,.22);padding:1px 6px;border-radius:4px">为什么现在不做</b> · <b style="background:rgba(255,255,255,.22);padding:1px 6px;border-radius:4px">什么信号触发就做</b> · <b style="background:rgba(255,255,255,.22);padding:1px 6px;border-radius:4px">怎么入手</b>。说不清的"没做"是疏忽,说得清的是取舍。</div>
+      <div class="lbl">演进原则</div>
+      <div class="txt">每项优化都用三类指标验收 —— <b style="background:rgba(255,255,255,.22);padding:1px 6px;border-radius:4px">业务成功率</b> · <b style="background:rgba(255,255,255,.22);padding:1px 6px;border-radius:4px">端到端时延</b> · <b style="background:rgba(255,255,255,.22);padding:1px 6px;border-radius:4px">单位任务成本</b>。从“功能更多”走向“价值可量化”。</div>
     </div>
   </div>
 </section>
@@ -1909,7 +1909,7 @@ function update(){
   const s=slides[cur];
   const act=s.dataset.act||'1';
   const actname=s.dataset.actname||'';
-  const actNames={1:'缘起',2:'全貌',3:'核心能力',4:'工程亮点',5:'实战演示',6:'取舍与教训',7:'现状与展望',8:'收尾'};
+  const actNames={1:'缘起',2:'全貌',3:'核心能力',4:'工程亮点',5:'实战演示',6:'取舍与教训',7:'功能进化',8:'收尾'};
   actTag.innerHTML=`<b>第${['','一','二','三','四','五','六','七','八'][act]}幕</b> · ${actNames[act]||actname}`;
   prevBtn.disabled=cur===0;
   nextBtn.disabled=cur===total-1;
