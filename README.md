@@ -2,6 +2,8 @@
 
 English documentation: [README_EN.md](README_EN.md)
 
+> **免责申明：** 本项目仅供学习、研究和技术交流使用，禁止用于商业用途。项目中的第三方名称、商标、接口示例、模型及素材仅用于演示，可能涉及第三方知识产权或服务条款；使用者应自行核验授权与合规性，并承担使用本项目产生的全部责任。
+
 基于 FastAPI、LangGraph、PostgreSQL、Redis 和 Milvus 的企业知识工作流 Agent。
 
 [在线项目介绍](https://kingoftaro.github.io/hello-xiao-a/) · [从 0 到 1 项目搭建](docs/从0到1项目搭建.md) · [完整产品文档](docs/产品文档.md) · [部署指南](deploy/DEPLOY.md)
