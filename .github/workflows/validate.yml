@@ -1,0 +1,23 @@
+name: Validate
+
+on: [push, pull_request]
+
+jobs:
+  repository:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python scripts/validate_project.py
+      - name: Validate development Compose
+        run: |
+          cp .env.example .env
+          docker compose -f docker-compose.yml config --quiet
+          rm .env
+      - name: Validate production Compose
+        run: |
+          cp .env.prod.example .env.prod
+          docker compose --env-file .env.prod -f docker-compose.prod.yml config --quiet
+          rm .env.prod
