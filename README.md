@@ -1,6 +1,6 @@
 # Hello，小A——企业知识工作流 Agent
 
-[简体中文](README.md) | [English](README.en.md)
+[简体中文](README.md) | [English](README.EN.md)
 
 基于 FastAPI、LangGraph、PostgreSQL、Redis 和 Milvus 的企业知识工作流 Agent。
 
