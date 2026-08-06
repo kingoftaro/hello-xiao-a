@@ -1,5 +1,7 @@
 # Hello, Xiao A — Enterprise Knowledge Workflow Agent
 
+[简体中文](README.md) | [English](README_EN.md)
+
 An enterprise knowledge workflow agent built with FastAPI, LangGraph, PostgreSQL, Redis, and Milvus.
 
 [Live showcase](https://kingoftaro.github.io/hello-xiao-a/) · [Project from 0 to 1](docs/从0到1项目搭建.md) · [Product documentation](docs/产品文档.md) · [Deployment guide](deploy/DEPLOY.md)
